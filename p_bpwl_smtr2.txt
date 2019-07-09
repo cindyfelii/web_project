@@ -9,12 +9,24 @@ semoga kita semua mendapatkan nilai yang bagus
 serta lulus dipelajaran bpwl ini
 dan mendapatkan nikai A
 aminnnnnnnnnnn
+<<<<<<< HEAD
+>>test
+=======
 
 
 
 
+
+<<<<<<< HEAD
 
 
 
 
 hai selamat siang
+=======
+>>>>>>> b2fb3fcc9fac99f925d0720bc9f995fb1e38e947
+
+
+
+
+cinpek bolottttttttttttttttttttttttttttt
