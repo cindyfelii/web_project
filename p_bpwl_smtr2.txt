@@ -13,15 +13,24 @@ aminnnnnnnnnnn
 >>test
 =======
 
+NISEK BOLOTTTTTTTTTTT!!!!!!!!!!!!!!!!!!!
+
+Nisek cantik dong
+IPIT GAPUAKKKKKKKKKKKKKKKKK
+
+WOIIIIIIIIIIIIIIII NISEKKKKKKKKKKKKKKKKKKKKK CAAAAAAAKKKKKKKKKKKKKKKKKKKKKKAAAAAAAAAAAAAAAAAAKKKKKKKKKKKKKKKKKKKK AAAAAAWWWWAAAAAAKKKKKKKK!
+
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+cinpek bolottttttttttttttttttt
+>>>>>>> 277a94de6ed146eadbae16994b21ff2a832d46ad
 
 
 
 
 <<<<<<< HEAD
-
-
-
-
 hai selamat siang
 =======
 >>>>>>> b2fb3fcc9fac99f925d0720bc9f995fb1e38e947
@@ -40,3 +49,8 @@ cinpek bolottttttttttttttttttttttttttttt
 
 
 cinpek dan cenna
+=======
+
+
+woi apa judul kita??????????
+>>>>>>> 277a94de6ed146eadbae16994b21ff2a832d46ad
