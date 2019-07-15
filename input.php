@@ -11,8 +11,7 @@ $query = "insert INTO user SET
 								password = '$password'
 								";
 
-mysqli_query($koneksi, $query)
-or die ("Gagal Perintah SQL".mysql_error());
+mysqli_query($koneksi, $query);
 header('location:login.php');
 
 ?>
