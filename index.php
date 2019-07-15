@@ -1,107 +1,104 @@
-<?php 
-
-session_start();
-
-if (empty($_SESSION['username'])){
-  
-	header('location:login.php');
-}
-else
-{
-?>
-<!DOCTYPE html>
 <html>
-<head>
-	<title>BMI</title>
-	<link rel="stylesheet" type="text/css" href="style/bootstrap.css">
-</head>
-<style>
-body {
-    padding: 20px 20%;
-}
-form {
-    padding: 10px 20px;
-    background-color: #f5f5f5;
-    border: solid thin #EEE;
-}
-input, select {
-    padding: 6px 12px;
-}
-.hasil {
-    padding: 10px 20px;
-    background-color: #900;
-    color: #FFF;
-    border: solid thin #600;
-}
-</style>
-</head>
+    <head>
+    <title>index</title>
+    <style>
+    * {margin:0; padding:0;}
 
-<body>
-<h1>Menghitung BMI</h1>
-
-<?php
-// Action form
-if (isset($_GET['submit'])) {
-    // Input form
-    $nama        = $_GET['nama'];
-    $kelamin    = $_GET['kelamin'];
-    $tb            = $_GET['tb']/100;
-    $bb            = $_GET['bb'];
-    /* Rumus BMI adalah:
-    BMI = BERAT BADAN / KUADRAT TINGGI BADAN
-    */    
-    // Hitung BMI
-    $bmi        = $bb / ($tb * $tb);
-    // Mencetak hasil
-    echo '<div class="hasil">';
-    echo "<h3>Hasil perhitungan BMI</h3>";
-    echo "Nama Anda: $nama<br>";
-    echo "Jenis kelamin: $kelamin<br>";
-    echo "Tinggi Badan: $tb meter<br>";
-    echo "Berat Badan: $bb kilogram<br>";
-    echo "<hr>BMI Anda: ".number_format($bmi);
-    echo "<h4>Kesimpulan:</h4>";
-    // Menghitung dan mencetak kesimpulan
-    if($bmi < 15.5) {
-        echo "Anda mengalami anoreksia";
-    }elseif ($bmi < 18.5 ) {
-        echo "Anda mengalami kekurangan gizi";
-    }elseif ($bmi < 25 ) {
-        echo "Anda memiliki berat badan normal";
-    }elseif ($bmi < 30 ) {
-        echo "Anda memiliki overweight";
-    }elseif ($bmi < 35 ) {
-        echo "Anda mengalami Obesitas Level 1";
-    }elseif ($bmi < 40 ) {
-        echo "Anda mengalami Obesitas Level 2";
-    }else {
-        echo "Anda mengalami Obesitas Akut";
+    body {
+     background-color:#fff;
+     font-family:Arial, Helvetica, sans-serif;
+     color:#000;
     }
-    // closing div
-    echo '</div>';
-}
-?>
 
-<form    methot="get" action="">
-Nama<br>
-<input type="text" name="nama"><br>
-Jenis kelamin<br>
-<select name="kelamin">
-    <option value="Laki-laki">Laki-laki</option>
-    <option value="Perempuan">Perempuan</option>
-</select><br>
-Tinggi badan (cm) <br>
-<input type="text" name="tb"><br>
-Berat badan (kg)<br>
-<input type="text" name="bb"><br>
-<input type="submit" name="submit" value="Hitung BMI">
-<a class="btn btn-link pull-right" href="logout.php">Logout</a>
-</form>
+    nav {
+     margin:auto;
+     text-align: center;
+     width: 100%;
+    } 
+
+    nav ul ul {
+     display: none;
+    }
+
+    nav ul li:hover > ul{
+    display: block;
+    width: 150px;
+    }
+
+    nav ul {
+     background: #53bd84;
+     padding: 0 20px;
+     list-style: none;
+     position: relative;
+     display: inline-table;
+     width: 100%;
+    }
+
+    nav ul:after {
+     content: ""; 
+     clear:both; 
+     display: block;
+    }
+
+    nav ul li{
+     float:left;
+    }
+
+    nav ul li:hover{
+     background:#666;
+    }
+
+    nav ul li:hover a{
+     color:#fff;
+    }
+
+    nav ul li a{
+     display: block;
+     padding: 25px;
+     color: #fff;
+     text-decoration: none;
+    }
+
+    nav ul ul{
+     background: #53bd84;
+     border-radius: 0px;
+     padding: 0;
+     position: absolute;
+     top:100%;
+    }
+
+    nav ul ul li{
+     float:none;
+     border-top: 1px soild #53bd84;
+     border-bottom: 1px solid #53bd84;
+     position: relative;
+    }
+
+    nav ul ul li a{
+     padding: 15px 40px;
+     color: #fff;
+    }
+
+    nav ul ul li a:hover{
+     background-color: #666;
+    }
+
+    nav ul ul ul{
+     position: absolute;
+     left: 100%;
+     top: 0;
+    }
+    </style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu sehat</a>
+        <li><a href="kalkulator.php">kalkulator BMI</a></li>
+        <li><a href="#">Kontak Kami</a></li>
+        <li><a href="#" onClick="return confirm ('Yakin?')">Logout</a></li>
+    
+</nav>
 </body>
 </html>
-
-<?php
-}
-?>
-
-           
