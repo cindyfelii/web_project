@@ -95,8 +95,8 @@
     <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Menu sehat</a>
-        <li><a href="#">Riwayat</a></li>
-        <li><a href="#">Statistik</a></li>
+        <li><a href="kalkulator.php">kalkulator BMI</a></li>
+        <li><a href="#">Kontak Kami</a></li>
         <li><a href="#" onClick="return confirm ('Yakin?')">Logout</a></li>
     
 </nav>
