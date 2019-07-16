@@ -7,10 +7,9 @@ session_start();
 	<title>BMI SEDERHANA</title>
 	<link rel="stylesheet" type="text/css" href="style/bootstrap.css">
 </head>
-<body>
+<body background-color="red">
 
-
-<div class="container" style="margin-top:8%" background="red">
+<div class="container" style="margin-top:8%" >
 	<div class="row">
 		<div class="col-md-4 col-md-offset-4">
 			<p>
