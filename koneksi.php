@@ -4,7 +4,7 @@ $koneksi = mysqli_connect
 				"localhost",
 				"root",
 				"",
-				"login"
+				"user"
 			);
 if (mysqli_connect_errno())
 	{
