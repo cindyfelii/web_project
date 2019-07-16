@@ -4,7 +4,7 @@ $koneksi = mysqli_connect
 				"localhost",
 				"root",
 				"",
-				"phpmyadmin"
+				"login"
 			);
 if (mysqli_connect_errno())
 	{
@@ -12,4 +12,3 @@ if (mysqli_connect_errno())
 		.mysqli_connect_error();
 	}
 ?>
-
