@@ -10,7 +10,7 @@ session_start();
 <body>
 
 
-<div class="container" style="margin-top:8%">
+<div class="container" style="margin-top:8%" background="red">
 	<div class="row">
 		<div class="col-md-4 col-md-offset-4">
 			<p>
