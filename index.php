@@ -94,26 +94,11 @@
 <nav>
     <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Menu utama</a>
-
-            <ul>
-                <li><a href="#">Anggota</a></li>
-                <li><a href="#">Buku</a></li>
-                <li><a href="#">Kategori Buku</a></li>
-            </ul>
-        </li>
+        <li><a href="#">Menu utama</a></li>
         <li><a href="#">Menu sehat</a>
-            <ul>
-                
-            </ul>
-            <li><a href="#">Riwayat</a>
-            <ul>
-                <li><a href="#">Peminjaman</a></li>
-                <li><a href="#">Pengembalian</a></li>
-            </ul>
-        </li>
+        <li><a href="#">Riwayat</a></li>
         <li><a href="#" onClick="return confirm ('Yakin?')">Logout</a></li>
-    </ul>
+    
 </nav>
 </body>
 </html>
